@@ -42,3 +42,6 @@ navItems.forEach((navItem) => {
         navigation.classList.remove("active");
     });
 });
+
+
+
