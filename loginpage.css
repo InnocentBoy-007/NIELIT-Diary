@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Luckiest+Guy&family=Macondo&family=Mukta:wght@200&family=Noto+Sans+JP:wght@300&family=Pixelify+Sans&family=Poppins:wght@400;500&family=Rubik:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.75)), url(photos/welcomepic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.logo img {
+    margin: 2rem 2rem;
+    width: 15rem;
+}
+
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 40px 50px 60px;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.form-box h1 {
+    font-size: 40px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.form-box h1::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    border-radius: 3px;
+    background: black;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: #999;
+}
+
+form p {
+    text-align: left;
+    font-size: 12px;
+}
+
+form p a {
+    color: #3c00a0;
+}
+
+.btn-field {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn-field button {
+    width: 50%;
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+@media (max-width:799px) {
+    .logo img {
+        margin: 1rem 1rem;
+    }
+}
+
+@media(max-width:670px) {
+    .logo img {
+        width: 10rem;
+    }
+
+    .form-box h1 {
+        margin-bottom: 1rem;
+    }
+
+    .form-box {
+        width: 80%;
+        max-width: 400px;
+        transform: translate(-50%, -60%);
+        padding: 20px 30px 40px;
+    }
+}
