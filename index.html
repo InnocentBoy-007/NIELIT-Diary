@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginpage.css">
+    <link rel="icon" href="https://github.com/InnocentBoy-007/NIELIT-Diary/blob/main/NIELITDiary%20logo.png?raw=true">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>NIELIT Diary/Login Page</title>
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <img src="https://github.com/InnocentBoy-007/NIELIT-Diary/blob/main/NIELITDiary%20logo.png?raw=true" alt="NIELIT">
+        </div>
+        <div class="form-box">
+            <h1 id="title">Login</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" id="username" placeholder="Username">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-field" id="passwordField">
+                        <i class='bx bxs-lock-alt'></i>
+                        <input type="password" id="password" placeholder="Password">
+                    </div>
+                    <p id="clickBtn">N.B.: <strong>Click here</a></strong> to request password.</p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="loginBtn">Log in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="loginpage.js"></script>
+</body>
+</html>
