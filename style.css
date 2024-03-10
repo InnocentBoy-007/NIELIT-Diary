@@ -775,15 +775,6 @@ footer .top:hover {
 }
 
 @media (max-width: 799px) {
-    .custom-title {
-        font-size: 1.2em;
-    }
-
-    .custom-container {
-        width: 300px;
-        height: auto;
-    }
-
     .home .content h1 {
         font-size: 3rem;
         line-height: 3rem;
