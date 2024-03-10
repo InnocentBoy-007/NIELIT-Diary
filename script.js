@@ -60,29 +60,3 @@ document.querySelectorAll('.pro img').forEach(img => {
 window.onload = function () {
     document.getElementById('loading-overlay').style.display = 'none';
 }
-
-function customWelcome(message) {
-    Swal.fire({
-        title: 'Welcome to NIELIT Diary',
-        text: message,
-        icon: 'success',
-        confirmButtonText: 'Continue',
-        timer: 3000, // Close the welcome box after 5 seconds
-        showConfirmButton: true,
-        timerProgressBar: true,
-        didOpen: () => {
-            Swal.showLoading();
-            setTimeout(() => {
-                Swal.close();
-            }, 3000);
-        },
-        customClass: {
-            title: 'custom-title',
-            container: 'custom-container',
-        },
-        width: '500',
-        heightAuto: false,
-    });
-}
-
-customWelcome('Explore your memories!');
